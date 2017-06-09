@@ -14,6 +14,10 @@
 		D97EEAB71EE9CCDD002F70CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97EEAB51EE9CCDD002F70CB /* LaunchScreen.storyboard */; };
 		D97EEAC21EE9CCDD002F70CB /* SpotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EEAC11EE9CCDD002F70CB /* SpotifyTests.swift */; };
 		D97EEACD1EE9CCDE002F70CB /* SpotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EEACC1EE9CCDE002F70CB /* SpotifyUITests.swift */; };
+		D97EEADD1EE9CD13002F70CB /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EEADA1EE9CD13002F70CB /* SpotifyAudioPlayback.framework */; };
+		D97EEADE1EE9CD13002F70CB /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EEADB1EE9CD13002F70CB /* SpotifyAuthentication.framework */; };
+		D97EEADF1EE9CD13002F70CB /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97EEADC1EE9CD13002F70CB /* SpotifyMetadata.framework */; };
+		D97EEAE31EE9CD40002F70CB /* Spotify.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EEAE21EE9CD40002F70CB /* Spotify.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,12 @@
 		D97EEAC81EE9CCDE002F70CB /* SpotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EEACC1EE9CCDE002F70CB /* SpotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyUITests.swift; sourceTree = "<group>"; };
 		D97EEACE1EE9CCDE002F70CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D97EEADA1EE9CD13002F70CB /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		D97EEADB1EE9CD13002F70CB /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		D97EEADC1EE9CD13002F70CB /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		D97EEAE01EE9CD40002F70CB /* Spotify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spotify-Bridging-Header.h"; sourceTree = "<group>"; };
+		D97EEAE11EE9CD40002F70CB /* Spotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		D97EEAE21EE9CD40002F70CB /* Spotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spotify.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97EEADD1EE9CD13002F70CB /* SpotifyAudioPlayback.framework in Frameworks */,
+				D97EEADF1EE9CD13002F70CB /* SpotifyMetadata.framework in Frameworks */,
+				D97EEADE1EE9CD13002F70CB /* SpotifyAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,9 @@
 		D97EEAA01EE9CCDD002F70CB = {
 			isa = PBXGroup;
 			children = (
+				D97EEADA1EE9CD13002F70CB /* SpotifyAudioPlayback.framework */,
+				D97EEADB1EE9CD13002F70CB /* SpotifyAuthentication.framework */,
+				D97EEADC1EE9CD13002F70CB /* SpotifyMetadata.framework */,
 				D97EEAAB1EE9CCDD002F70CB /* Spotify */,
 				D97EEAC01EE9CCDD002F70CB /* SpotifyTests */,
 				D97EEACB1EE9CCDE002F70CB /* SpotifyUITests */,
@@ -103,6 +119,9 @@
 				D97EEAB31EE9CCDD002F70CB /* Assets.xcassets */,
 				D97EEAB51EE9CCDD002F70CB /* LaunchScreen.storyboard */,
 				D97EEAB81EE9CCDD002F70CB /* Info.plist */,
+				D97EEAE11EE9CD40002F70CB /* Spotify.h */,
+				D97EEAE21EE9CD40002F70CB /* Spotify.m */,
+				D97EEAE01EE9CD40002F70CB /* Spotify-Bridging-Header.h */,
 			);
 			path = Spotify;
 			sourceTree = "<group>";
@@ -193,6 +212,8 @@
 				TargetAttributes = {
 					D97EEAA81EE9CCDD002F70CB = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4WLK587CC4;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D97EEABC1EE9CCDD002F70CB = {
@@ -261,6 +282,7 @@
 			files = (
 				D97EEAAF1EE9CCDD002F70CB /* ViewController.swift in Sources */,
 				D97EEAAD1EE9CCDD002F70CB /* AppDelegate.swift in Sources */,
+				D97EEAE31EE9CD40002F70CB /* Spotify.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,10 +434,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4WLK587CC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spotify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = crisa.Spotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spotify/Spotify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +454,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4WLK587CC4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spotify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = crisa.Spotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spotify/Spotify-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +542,7 @@
 				D97EEAD31EE9CCDE002F70CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D97EEAD41EE9CCDE002F70CB /* Build configuration list for PBXNativeTarget "SpotifyTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +551,7 @@
 				D97EEAD61EE9CCDE002F70CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D97EEAD71EE9CCDE002F70CB /* Build configuration list for PBXNativeTarget "SpotifyUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +560,7 @@
 				D97EEAD91EE9CCDE002F70CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
